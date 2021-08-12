@@ -72,3 +72,13 @@
 .toggle-button:checked {
     background-color: #2D2D3A;
 }
+
+body.light {
+    background-color: #A6ADB1;
+    color: #282B31;
+}
+
+body.dark {
+    background-color: #1C1C24;
+    color: #fff;
+}
