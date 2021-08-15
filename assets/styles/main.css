@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "San Francisco";
+    src: url("font/SFPRODISPLAYTHINITALIC.OTF") format("otf"),
+}
+
+.text,
+.text__inactive,
+.text__exit {
+    font-family: "San Francisco", Helvetica, sans-serif;
+}
+
+.text__exit {
+    color: #E24444;
+}
+
+.text__exit:hover {
+    color: #E24444;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__profile {
+    width: 8vw;
+    border-radius: 15px;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+    width: 15vw;
+    margin-top: 55%;
+    border-radius: 5%;
+}
+
+.toggle-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin: 0;
+    vertical-align: top;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button::after {
+    content: "";
+
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 1.5px;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    transform: translateX(0);
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.flip {
+    transform: rotate(-180deg);
+}
+
+
+.toggle-button:checked::after {
+    transform: translateX(calc(100% + 3px));
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+a:hover {
+    text-decoration: none;
+}

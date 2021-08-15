@@ -10,32 +10,38 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="shortcut icon" type="images/svg" href="assets/images/logo.svg">
 </head>
 
 <body class="light">
     <header>
-        <nav class="navbar" style="background-color: rgba(0, 0, 0, 0.048);">
+        <nav class="navbar">
             <div class="navigation">
 
                 <div class="navbar-brand d-flex align-items-center justify-content-around">
                     <img src="assets/images/logo.svg" alt="logo">
-                    <p class="mt-3 mx-2">Pro-Promotion.com</p>
+                    <p class="mt-3 mx-2 text">Pro-Promotion.com</p>
                 </div>
 
                 <div class="d-flex justify-content-around align-items-center" style="width: 25%;">
-                    <a href=""><img class="m-1" src="assets/images/task_list.svg" alt=""> Task
+                    <a href="" class="text"><img class="m-1 icon__dark" src="assets/images/task_list.svg" alt=""><img
+                            class="m-1 icon__light" src="assets/images/gridark.svg" alt=""> Task
                         list</a>
-                    <a href=""><img class="m-1" src="assets/images/news.svg" alt=""> News</a>
-                    <a href=""><img class="m-1" src="assets/images/help.svg" alt=""> Help</a>
+                    <a href="" class="text__inactive"><img class="m-1 icon__dark" src="assets/images/news.svg"
+                            alt=""><img class="m-1 icon__light" src="assets/images/newslight.svg" alt=""> News</a>
+                    <a href="" class="text__inactive"><img class="m-1 icon__dark" src="assets/images/help.svg"
+                            alt=""><img class="m-1 icon__light" src="assets/images/helplight.svg" alt=""> Help</a>
                 </div>
 
                 <div class="d-flex">
                     <div class="d-flex nav__profile align-items-center">
-                        <a href="" class="mx-2"><img src="assets/images/plus.svg" alt=""></a>
+                        <a href="" class="mx-2"><img class="icon__dark" src="assets/images/plus.svg" alt=""><img
+                                class="icon__light" src="assets/images/pluslight.svg" alt=""></a>
                         <div class="d-flex mx-3">
-                            <img src="assets/images/coins.svg" alt="">
-                            <p class="align-self-center m-1">2023</p>
+                            <img class="icon__dark" src="assets/images/coins.svg" alt=""><img class="icon__light"
+                                src="assets/images/coinslight.svg" alt="">
+                            <p class="align-self-center m-1 text">2023</p>
                         </div>
                     </div>
 
@@ -44,26 +50,31 @@
                         <div class="dropdown d-flex align-items-center">
                             <button class="btn p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/images/arrow-ios-down.svg" alt="">
+                                <img class="arrow" id="image" src="assets/images/arrow-ios-down.svg" alt="">
                             </button>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item my-3" href="#"><img src="assets/images/person.svg" alt=""> My
+                                <a class="dropdown-item my-3 text" href="#"><img class="icon__dark"
+                                        src="assets/images/person.svg" alt=""><img class="icon__light"
+                                        src="assets/images/personlight.svg" alt=""> My
                                     profile</a>
-                                <a class="dropdown-item my-3" href="#"><img src="assets/images/task_list.svg" alt="">
+                                <a class="dropdown-item my-3 text" href="#"><img class="icon__dark"
+                                        src="assets/images/task_list.svg" alt=""><img class="icon__light"
+                                        src="assets/images/gridark.svg" alt="">
                                     Task
                                     history</a>
                                 <div class="dropdown-divider mx-4"></div>
                                 <div class="d-flex align-items-center my-3">
-                                    <a class="dropdown-item" href="#"><img class="m-1" src="assets/images/sun.svg"
-                                            alt="">
+                                    <a class="dropdown-item text" href="#"><img class="m-1 icon__dark"
+                                            src="assets/images/sun.svg" alt=""><img class="m-1 icon__light"
+                                            src="assets/images/sunlight.svg" alt="">
                                         Dark mode</a>
                                     <div class="d-flex align-items-center mx-4">
                                         <input type="checkbox" id="themes" class="toggle-button">
                                     </div>
                                 </div>
                                 <div class="dropdown-divider mx-4"></div>
-                                <a class="dropdown-item my-3" href="#"><img class="m-1" src="assets/images/log-out.svg"
-                                        alt="">
+                                <a class="dropdown-item my-3 text__exit" href="#"><img class="m-1"
+                                        src="assets/images/log-out.svg" alt="">
                                     Log out</a>
 
                             </div>

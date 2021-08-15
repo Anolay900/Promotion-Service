@@ -1,84 +1,106 @@
-.example {
-    border: 1px solid red;
-}
-
-.navigation {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav__profile {
-    width: 8vw;
-    background-color: #2D2D3A;
-    border-radius: 15px;
-}
-
-.dropdown-menu-right {
-    right: 0;
-    left: auto;
-    width: 15vw;
-    margin-top: 55%;
-    border-radius: 5%;
-}
-
-.toggle-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.toggle-button {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 26px;
-    margin: 0;
-    vertical-align: top;
-    background: #2D2D3A;
-    border: none;
-    border-radius: 30px;
-    outline: none;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
-}
-
-.toggle-button::after {
-    content: "";
-
-    display: inline-block;
-    position: absolute;
-    left: 3px;
-    top: 1.5px;
-
-    width: 20px;
-    height: 20px;
-    background-color: #4447E2;
-    border-radius: 50%;
-
-    transform: translateX(0);
-    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
-}
-
-.toggle-button:checked::after {
-    transform: translateX(calc(100% + 3px));
-    background-color: #4447E2;
-}
-
-.toggle-button:checked {
-    background-color: #2D2D3A;
-}
-
 body.light {
-    background-color: #A6ADB1;
-    color: #282B31;
+  background-color: #A6ADB1;
+  color: #282B31;
+}
+
+body.light .text {
+  color: #282B31;
+}
+
+body.light .text__inactive {
+  color: #A6ADB1;
+}
+
+body.light nav {
+  background-color: #fff;
+  border-bottom: 2px solid #DDE1E8;
+}
+
+body.light .nav__profile {
+  background-color: #DDE1E8;
+}
+
+body.light .toggle-button {
+  background: #DDE1E8;
+}
+
+body.light .toggle-button::after {
+  background-color: #272B31;
+}
+
+body.light .toggle-button:checked::after {
+  background-color: #272B31;
+}
+
+body.light .toggle-button:checked {
+  background-color: #DDE1E8;
+}
+
+body.light .dropdown-menu {
+  background-color: #fff;
+  border: 2px solid #DDE1E8;
+}
+
+body.light .icon__dark {
+  display: none;
+}
+
+body.light .icon__light {
+  display: initial;
 }
 
 body.dark {
-    background-color: #1C1C24;
-    color: #fff;
+  background-color: #231F20;
+  color: #fff;
 }
+
+body.dark .text {
+  color: #fff;
+}
+
+body.dark .text__inactive {
+  color: #5F5F6E;
+}
+
+body.dark .dropdown-item:hover {
+  background-color: #2D2D3A;
+}
+
+body.dark nav {
+  background-color: #1C1C24;
+  border-bottom: 2px solid #5F5F6E;
+}
+
+body.dark .nav__profile {
+  background-color: #2D2D3A;
+}
+
+body.dark .toggle-button {
+  background: #2D2D3A;
+}
+
+body.dark .toggle-button::after {
+  background-color: #4447E2;
+}
+
+body.dark .toggle-button:checked::after {
+  background-color: #4447E2;
+}
+
+body.dark .toggle-button:checked {
+  background-color: #2D2D3A;
+}
+
+body.dark .dropdown-menu {
+  background-color: #1C1C24;
+  border: 2px solid #5F5F6E;
+}
+
+body.dark .icon__light {
+  display: none;
+}
+
+body.dark .icon__dark {
+  display: initial;
+}
+/*# sourceMappingURL=style.css.map */
