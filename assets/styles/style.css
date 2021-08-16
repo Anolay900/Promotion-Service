@@ -57,7 +57,9 @@ body.light .list__add {
   background-color: #DDE1E8;
 }
 
-body.light .list__task {
+body.light .list__task,
+body.light .banner,
+body.light .news__card {
   background-color: #FFFFFF;
 }
 
@@ -134,7 +136,9 @@ body.dark .list__add {
   background-color: #2D2D3A;
 }
 
-body.dark .list__task {
+body.dark .list__task,
+body.dark .banner,
+body.dark .news__card {
   background-color: #1C1C24;
 }
 

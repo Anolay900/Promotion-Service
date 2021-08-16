@@ -107,6 +107,7 @@ a:hover {
 .text__caption {
     align-self: center;
     justify-self: center;
+    font-size: 3vh;
 }
 
 .list__task {
@@ -151,4 +152,52 @@ a:hover {
     right: 4%;
     z-index: 99;
     cursor: pointer;
+}
+
+.text--size {
+    font-size: 2vh;
+}
+
+.text--logo {
+    font-size: 2.2vh;
+}
+
+.text--action {
+    font-size: 1.7vh;
+}
+
+.text--footer {
+    font-size: 2.2vh;
+}
+
+.text--cap {
+    font-size: 4.5vh;
+}
+
+.banner__col {
+    display: grid;
+    grid-template-columns: 50% 35%;
+    margin: 0% 2%
+}
+
+.banner {
+    border-radius: 15px;
+    margin: 3% 0%;
+    margin-bottom: 4%;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 26%);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 7%;
+}
+
+.news__card {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 70% 25% 5%;
+    padding: 7%;
+    border-radius: 15px;
 }
