@@ -139,3 +139,7 @@ a:hover {
     height: 10vh;
     margin-top: 7%;
 }
+
+.nav__btn {
+    width: 25%;
+}
