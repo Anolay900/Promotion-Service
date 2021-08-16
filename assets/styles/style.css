@@ -11,9 +11,13 @@ body.light .text__inactive {
   color: #A6ADB1;
 }
 
-body.light nav {
+body.light .navbar {
   background-color: #fff;
   border-bottom: 2px solid #DDE1E8;
+}
+
+body.light .footer__nav {
+  border-top: 2px solid #DDE1E8;
 }
 
 body.light .nav__profile {
@@ -49,6 +53,24 @@ body.light .icon__light {
   display: initial;
 }
 
+body.light .list__add {
+  background-color: #DDE1E8;
+}
+
+body.light .list__task {
+  background-color: #FFFFFF;
+}
+
+body.light .list__btn {
+  border: 2px solid #1750FF;
+  border-radius: 15px;
+}
+
+body.light .list__btn:hover {
+  background-color: #1750FF;
+  color: #fff;
+}
+
 body.dark {
   background-color: #231F20;
   color: #fff;
@@ -66,9 +88,13 @@ body.dark .dropdown-item:hover {
   background-color: #2D2D3A;
 }
 
-body.dark nav {
+body.dark .navbar {
   background-color: #1C1C24;
   border-bottom: 2px solid #5F5F6E;
+}
+
+body.dark .footer__nav {
+  border-top: 2px solid #5F5F6E;
 }
 
 body.dark .nav__profile {
@@ -102,5 +128,22 @@ body.dark .icon__light {
 
 body.dark .icon__dark {
   display: initial;
+}
+
+body.dark .list__add {
+  background-color: #2D2D3A;
+}
+
+body.dark .list__task {
+  background-color: #1C1C24;
+}
+
+body.dark .list__btn {
+  border: 2px solid #4447E2;
+  border-radius: 15px;
+}
+
+body.dark .list__btn:hover {
+  background-color: #4447E2;
 }
 /*# sourceMappingURL=style.css.map */

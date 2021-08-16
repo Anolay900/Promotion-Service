@@ -92,3 +92,50 @@
 a:hover {
     text-decoration: none;
 }
+
+.list {
+    margin: 5% 10%;
+}
+
+.list__add {
+    align-self: center;
+    justify-self: center;
+    padding: 1% 2%;
+    border-radius: 15px;
+}
+
+.text__caption {
+    align-self: center;
+    justify-self: center;
+}
+
+.list__task {
+    display: grid;
+    height: 40vh;
+    gap: 7%;
+    grid-template-rows: 20% 50% 20%;
+    justify-content: center;
+    padding: 2% 1%;
+    border-radius: 15px;
+}
+
+.list__btn {
+    text-align: center;
+    align-self: center;
+    padding: 4%;
+    margin-bottom: 10%;
+}
+
+.tasks {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.footer__nav {
+    height: 10vh;
+    margin-top: 7%;
+}

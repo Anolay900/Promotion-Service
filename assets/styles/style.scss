@@ -10,9 +10,13 @@ body.light {
         color: #A6ADB1;
     }
 
-    nav {
+    .navbar {
         background-color: #fff;
         border-bottom: 2px solid #DDE1E8;
+    }
+
+    .footer__nav {
+        border-top: 2px solid #DDE1E8;
     }
 
     .nav__profile {
@@ -47,6 +51,24 @@ body.light {
     .icon__light {
         display: initial;
     }
+
+    .list__add {
+        background-color: #DDE1E8;
+    }
+
+    .list__task {
+        background-color: #FFFFFF;
+    }
+
+    .list__btn {
+        border: 2px solid #1750FF;
+        border-radius: 15px;
+    }
+
+    .list__btn:hover {
+        background-color: #1750FF;
+        color: #fff;
+    }
 }
 
 body.dark {
@@ -65,9 +87,13 @@ body.dark {
         background-color: #2D2D3A;
     }
 
-    nav {
+    .navbar {
         background-color: #1C1C24;
         border-bottom: 2px solid #5F5F6E;
+    }
+
+    .footer__nav {
+        border-top: 2px solid #5F5F6E;
     }
 
     .nav__profile {
@@ -101,5 +127,22 @@ body.dark {
 
     .icon__dark {
         display: initial;
+    }
+
+    .list__add {
+        background-color: #2D2D3A;
+    }
+
+    .list__task {
+        background-color: #1C1C24;
+    }
+
+    .list__btn {
+        border: 2px solid #4447E2;
+        border-radius: 15px;
+    }
+
+    .list__btn:hover {
+        background-color: #4447E2;
     }
 }
