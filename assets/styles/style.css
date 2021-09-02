@@ -68,6 +68,14 @@ body.light .list__btn {
   border-radius: 15px;
 }
 
+body.light .file__btn {
+  border: 2px solid #DDE1E8;
+}
+
+body.light .file__btn:hover {
+  background-color: #DDE1E8;
+}
+
 body.light .list__btn:hover {
   background-color: #1750FF;
   color: #fff;
@@ -147,7 +155,62 @@ body.dark .list__btn {
   border-radius: 15px;
 }
 
+body.dark .file__btn {
+  border: 2px solid #2D2D3A;
+}
+
+body.dark .file__btn:hover {
+  background-color: #2D2D3A;
+}
+
 body.dark .list__btn:hover {
   background-color: #4447E2;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  body .nav__profile {
+    width: 12vw;
+    border-radius: 15px;
+  }
+  body .nav__btn {
+    width: 30%;
+  }
+  body .dropdown-menu-right {
+    right: 0;
+    left: auto;
+    width: 25vw;
+    margin-top: 55%;
+    border-radius: 5%;
+  }
+  body .tasks {
+    margin-top: 2%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (22%)[4];
+        grid-template-rows: repeat(4, 22%);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 4%;
+  }
+  body .list__task {
+    display: -ms-grid;
+    display: grid;
+    height: 45vh;
+    gap: 7%;
+    -ms-grid-rows: 20% 50% 20%;
+        grid-template-rows: 20% 50% 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3% 6%;
+    border-radius: 15px;
+  }
+  body .footer__nav {
+    height: 10vh;
+    margin-top: 8%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

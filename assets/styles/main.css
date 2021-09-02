@@ -201,3 +201,7 @@ a:hover {
     padding: 7%;
     border-radius: 15px;
 }
+
+img {
+    max-width: 100%;
+}

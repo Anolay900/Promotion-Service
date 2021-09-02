@@ -67,6 +67,14 @@ body.light {
         border-radius: 15px;
     }
 
+    .file__btn {
+        border: 2px solid #DDE1E8;
+    }
+
+    .file__btn:hover {
+        background-color: #DDE1E8;
+    }
+
     .list__btn:hover {
         background-color: #1750FF;
         color: #fff;
@@ -146,7 +154,67 @@ body.dark {
         border-radius: 15px;
     }
 
+    .file__btn {
+        border: 2px solid #2D2D3A;
+    }
+
+    .file__btn:hover {
+        background-color: #2D2D3A;
+    }
+
     .list__btn:hover {
         background-color: #4447E2;
     }
+}
+
+
+@mixin laptop {
+    @media screen and (min-width: 1024px) and (max-width: 1599px) {
+        @content;
+
+        .nav__profile {
+            width: 12vw;
+            border-radius: 15px;
+        }
+
+        .nav__btn {
+            width: 30%;
+        }
+
+        .dropdown-menu-right {
+            right: 0;
+            left: auto;
+            width: 25vw;
+            margin-top: 55%;
+            border-radius: 5%;
+        }
+
+        .tasks {
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 22%);
+            justify-content: space-between;
+            gap: 4%;
+        }
+
+        .list__task {
+            display: grid;
+            height: 45vh;
+            gap: 7%;
+            grid-template-rows: 20% 50% 20%;
+            justify-content: center;
+            padding: 3% 6%;
+            border-radius: 15px;
+        }
+
+        .footer__nav {
+            height: 10vh;
+            margin-top: 8%;
+        }
+    }
+}
+
+body {
+    @include laptop();
 }
